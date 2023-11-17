@@ -1,4 +1,5 @@
 public class Patient {
+    private LogIn pLogIn;
     private  String patientID ;
     static int counter = 0;
     private String patientName;

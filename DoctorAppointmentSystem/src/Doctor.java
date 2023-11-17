@@ -1,14 +1,16 @@
 public class Doctor {
+    private LogIn dLogin;
     private int docID;
     private static int counter = 0;
     private String docName;
     private DoctorType doctorType;
-
     private boolean isAvailable;
-    Doctor(){
-        docID = counter++;
-    }
 
+    public Doctor(String docName) {
+        docID = counter++;
+
+        this.docName = docName;
+    }
 
     public int getDocID() {
         return docID;
