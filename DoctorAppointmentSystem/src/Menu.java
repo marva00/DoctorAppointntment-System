@@ -12,21 +12,54 @@ public class Menu {
                     "3: Doctor\n" +
                     "4: Exit");
             choice = input.nextInt();
-            switch (choice){
+            switch (choice) {
                 case 1:
                     System.out.println("1:Login + \n" +
                             "2: Exit");
                     int adminLogin = input.nextInt();
 
-                        switch (adminLogin){
-                            case 1:
-                                //login code
+                    switch (adminLogin) {
+                        case 1:
+                            //login code
+                            break;
+                        case 2:
+                            break;
+                        default:
+                            System.out.println("invalid");
+                    }
 
-                        }
+                case 2:
+                    System.out.println("1:login + \n" +
+                            "2: Exit");
+                    int patientLogin = input.nextInt();
 
+                    switch (patientLogin) {
+                        case 1:
+                            //patient code
+                            break;
+                        case 2:
+                            break;
+                        default:
+                            System.out.println("invalid");
+                    }
+                case 3:
+                    System.out.println("1:login + \n" +
+                            "2: Exit");
+                    int doctorLogin = input.nextInt();
+
+                    switch (doctorLogin) {
+                        case 1:
+                            //doc code
+                            break;
+                        case 2:
+                            break;
+                        default:
+                            System.out.println("invalid");
+                    }
 
             }
+            while (choice != 4) ;
 
-        } while (choice != 4);
+        }
     }
 }
